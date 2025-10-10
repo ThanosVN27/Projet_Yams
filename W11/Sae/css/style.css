@@ -1,0 +1,647 @@
+body {
+    font-family: 'Inknut Antiqua', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Couleur de fond */
+}
+
+/* Style du header */
+header {
+    background-color: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0); /* Texte blanc */
+    text-align: center; 
+
+    
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0; 
+    background-color: red;
+    width: 100%; /* La largeur est limitée à celle du parent */
+    padding: 20px; 
+    box-sizing: border-box;
+    text-align: center; /* Centre le texte horizontalement */
+    color: white; 
+}
+
+
+.logo-container {
+    background-color: grey;
+    margin: 25px;
+ 
+    
+   
+}
+.logo-container img {
+   width: 350px;
+   margin-top: 10px;
+
+}
+
+.logo-container figcaption {
+    font-size: 1.5rem;
+ 
+}
+
+main {
+    background-color: rgba(95, 12, 12, 1);
+    padding: 10px 0;
+}
+
+.menu {
+    background-color: black;
+    padding: 20px 20px;
+}
+
+.menu ul {
+    display: flex; /* Les éléments <li> s'affichent horizontalement */
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: center; /* Centre les éléments verticalement */
+    list-style: none; /* Supprime les puces des listes */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime le padding par défaut */
+}
+
+.menu ul li a {
+    text-decoration: dotted;
+}
+
+.menu ul li {
+    margin: 0 200px; /* Ajoute de l'espace entre les éléments */
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white; /* Couleur du texte */
+    font-family: 'Inknut Antiqua', serif; 
+    font-size: 1.2rem; /* Taille du texte */
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    transition: color 0.3s ease; 
+}
+
+.menu ul li a:hover {
+    color: red; 
+}
+
+.menu ul li img {
+    width: 30px; 
+    height: 30px;
+}
+
+.game-content {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 10px ;
+    flex-direction: column;
+    border: 2px solid black; /* Bordure noire */
+    border-radius: 10px; /* Coins arrondis */
+    margin: 10px;
+}
+
+.titre {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: white; 
+    font-size: 1.5rem;
+   
+}
+
+.titre p {
+    padding: 10px;
+}
+
+.joueur1-des {
+    padding: 10px 10px;
+    border: 2px solid black;
+    margin: 5px;
+
+}
+
+.joueur1-des p {
+    padding: 5px;
+    text-align: center;
+    font-size: 24px;
+    
+}
+
+.joueur1-des img {
+    width: 60px;
+    padding: 0 15px;
+    height: 60px;
+    max-width: 100%; 
+    max-height: 100%; 
+}
+
+
+
+.joueur2-des {
+    padding: 10px 10px;
+    border: 2px solid black;
+    margin: 5px;
+
+}
+
+.joueur2-des p {
+    padding: 5px;
+    text-align: center;
+    font-size: 24px;
+    
+}
+
+.joueur2-des img {
+    width: 60px;
+    height: 60px;
+    padding: 0 15px;
+    max-width: 100%; 
+    max-height: 100%; 
+}
+
+.input-charger {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre de la section */
+.input-charger label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Champ de texte pour l'ID */
+.input-charger input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* Quand l'utilisateur clique sur le champ de texte */
+.input-charger input[type="text"]:focus {
+    border-color: #5cb85c;
+    outline: none;
+}
+
+.input-charger button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect pour le bouton */
+.input-charger button:hover {
+    background-color: #4cae4c;
+}
+
+/* Placeholder du champ de texte */
+.input-charger input::placeholder {
+    color: #aaa;
+}
+
+
+
+.tour {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin: 10px;
+}
+
+.Jeu {
+    background-color: white;
+    padding: 20px 45px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    width: 900px;
+   
+}
+
+.Jeu h5 {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: color-mix(in oklab, #e1ff00, #ff0000 50%);
+    padding: 10px;
+    font-size: 1rem;
+}
+
+
+/* Bouton "Tour avant" à gauche */
+.tour {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.game-layout {
+    display: flex;
+    justify-content: space-between; /* Sépare les boutons et les joueurs */
+    align-items: center;
+    padding: 10px;
+}
+
+.button {
+    display: flex; /* Boutons empilés verticalement */
+    align-items: flex-end; 
+    gap: 10px; 
+}
+
+.tour-gauche, .tour-droite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.tour-gauche img, .tour-droite img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+}
+
+.tour-gauche button, .tour-droite button {
+    padding: 5px 10px;
+    background-color: #d0d0d0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.tour-gauche button:hover, .tour-droite button:hover {
+    background-color: #c0c0c0; /* Couleur de survol */
+}
+
+.battle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacement entre les joueurs et l'image */
+}
+
+
+
+.joueur1 img, .joueur2 img {
+    width: 100px;
+    height: 100px;
+}
+
+.joueurs-container {
+    display: flex;
+    justify-content: space-between; /* Aligner les joueurs au centre */
+    align-items: center; /* Aligner verticalement les éléments */
+    gap: 40px; /* Espacement entre les joueurs et l'image de bataille */
+    padding: 10px;
+}
+
+.joueur1, .joueur2 {
+    display: flex;
+    flex-direction: column; /* Disposer l'image et l'affichage verticalement */
+    align-items: center; /* Centrer les éléments à l'intérieur des divs */
+    gap: 10px; /* Espacement entre l'image et les informations */
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    height: auto;
+    background-color: #f9f9f9;
+}
+
+.joueur1 img, .joueur2 img {
+    width: 100px;
+    height: 100px;
+}
+
+.Affichage {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 5px; 
+}
+
+figure {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+figure img {
+    width: 150px;
+    height: auto;
+    margin: 0 20px; 
+}
+
+footer {
+    background-color: #333; /* Couleur de fond sombre */
+    color: white; 
+    padding: 20px;
+    text-align: center; /* Centrer le texte */
+    font-size: 0.9rem; 
+    line-height: 1.5; 
+    border-top: 3px solid #444; 
+}
+
+footer img {
+    margin-top: 10px;
+    width: 100px; 
+    height: auto;
+}
+
+footer p {
+    margin: 10px 0; 
+}
+
+footer a {
+    color: #4CAF50; 
+    text-decoration: none; 
+}
+
+footer a:hover {
+    text-decoration: underline; 
+}
+
+/* Regles */
+/* En-tête */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.Regles {
+    background-color: white;
+    padding: 10px 0;
+}
+
+/* Section principale */
+h2, h3 {
+    color: #444;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+section {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 10px ;
+    flex-direction: column;
+    border: 2px solid black; /* Bordure noire */
+    border-radius: 10px; /* Coins arrondis */
+    margin: 10px;
+}
+
+.score-total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 2px solid #ccc;
+    flex-direction: row;
+}
+
+.score-global {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 2px solid #ccc;
+    flex-direction: row;
+}
+
+.score-joueur1, .score-joueur2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.score-joueur1 {
+    background-color: #f2f2f2;
+}
+
+.score-joueur2 {
+    background-color: #f2f2f2;
+}
+.des {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;;
+}
+
+.round {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-result {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 48%;
+}
+
+.player-result h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.dice-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.dice-container img {
+    width: 50px;
+    height: 50px;
+}
+
+.player-result p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.round h3 {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+
+@media (max-width: 900px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu ul li {
+        margin: 5px 15px;
+    }
+
+    .game-content {
+        padding: 20px;
+    }
+
+    .titre {
+        font-size: 1.5rem;
+    }
+
+    .input-charger {
+        padding: 20px;
+    }
+
+    .score-total {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .score-joueur1, .score-joueur2 {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+
+    .game-content {
+        padding: 15px;
+    }
+
+    .titre {
+        font-size: 1.2rem;
+    }
+
+    .input-charger {
+        padding: 15px;
+    }
+
+    .score-total {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .score-joueur1, .score-joueur2 {
+        font-size: 1rem;
+    }
+
+    
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .logo-container img {
+        width: 250px;
+    }
+
+    .input-charger button {
+        font-size: 0.9rem;
+    }
+
+    .score-total {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>Jeux de Yam</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Bienvenue sur le jeu de Yams</h1>
+            <div class="logo-container">
+                <figure>
+                    <figcaption>Jeux de Yams</figcaption>
+                    <img src="img/logo.png" alt="Jeux de Yam">
+                </figure>
+            </div>
+        </div>
+        
+        <nav class="menu">
+            <ul>
+                <li><a href="sae.html"><img src="img/Home.png" alt="Accueil"> Accueil</a></li>
+                <li><a href="jeux.html"><img src="img/DiceMenu.png" alt="Jeux"> Jeux</a></li>
+                <li><a href="global.html"><img src="img/Globe.png" alt="Global"> Globale</a></li>
+                <li><a href="regles.html"><img src="img/Rules.png" alt="Règles"> Règles</a></li>
+            </ul>
+        </nav> 
+    </header>
+    
+    <main>
+        <section class="game-content">
+            <div class="titre">
+                <p>Résultat de la partie</p>
+                <figure>
+                    <img src="img/podium.png" alt="Podium">
+                </figure>
+            </div>
+            
+            <div class="input-charger">
+                <label for="game-id">Game ID:</label>
+                <input type="text" id="game-id" name="game-id" placeholder="Enter Game ID">
+                <button id="load-game">Charger le jeu</button>
+            </div>
+
+            <p><strong>Code du groupe:</strong> <span id="game-code">Chargement...</span></p>
+            <p><strong>Date du jeu:</strong> <span id="game-date">Chargement...</span></p>
+        </section>
+        
+        <section class="tour">
+            <div class="des">
+                <div class="joueur1-des">
+                    <p id="pseudo-joueur1">Joueur 1</p>
+                    <img src="img/Dice1.png" alt="Dé 1">
+                    <img src="img/Dice2.png" alt="Dé 2">
+                    <img src="img/Dice3.png" alt="Dé 3">
+                    <img src="img/Dice4.png" alt="Dé 4">
+                    <img src="img/Dice5.png" alt="Dé 5">
+                </div>
+
+                <div class="joueur2-des">
+                    <p id="pseudo-joueur2">Joueur 2</p>
+                    <img src="img/Dice1.png" alt="Dé 1">
+                    <img src="img/Dice2.png" alt="Dé 2">
+                    <img src="img/Dice3.png" alt="Dé 3">
+                    <img src="img/Dice4.png" alt="Dé 4">
+                    <img src="img/Dice5.png" alt="Dé 5">
+                </div>            
+            </div>   
+
+            <div class="Jeu">
+                <h5>-----------Tour 1-----------</h5>
+                
+                <div class="game-layout">
+                    <div class="button">
+                        <div class="tour-gauche">
+                            <img src="img/rewind-button.png" alt="Bouton pour aller au tour précédent">
+                            <button type="button" id="previous-round">Tour précédent</button>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div class="tour-droite">
+                            <img src="img/fast-forward.png" alt="Bouton pour aller au tour suivant">
+                            <button type="button" id="next-round">Tour suivant</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="joueurs-container">
+                    <div class="joueur1">
+                        <img src="img/joueur.png" alt="Joueur 1">
+                        <div class="Affichage">
+                            <p id="pseudo-joueur1">Joueur 1</p> <!-- Affichage du pseudo ici -->
+                            <p id="challenge-joueur1">Challenge : </p>
+                            <p id="score-joueur1">Point : </p>
+                        </div>
+                    </div>
+                    <figure>
+                        <img src="img/Battle.png" alt="Battle">
+                    </figure>
+                    <div class="joueur2">
+                        <img src="img/joueur.png" alt="Joueur 2">
+                        <div class="Affichage">
+                            <p id="pseudo-joueur2">Joueur 2</p> <!-- Affichage du pseudo ici -->
+                            <p id="challenge-joueur2">Challenge : </p>
+                            <p id="score-joueur2">Point : </p>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="score-total">
+                    <div class="score-joueur1">
+                        <p>Score Joueur 1: <span id="scoreJoueur1">0</span></p>
+                    </div>
+                    <div class="score-joueur2">
+                        <p>Score Joueur 2: <span id="scoreJoueur2">0</span></p>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2021-2024 IUT Robert Schuman - Tous droits réservés.</p>
+        <p>Site réalisé par les étudiants. Contact : <a href="mailto:contact@yams.com">contact@yams.com</a></p>
+    </footer>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
