@@ -1,4 +1,4 @@
-# SAE P11_W11
+# Jeux de Yams
 
 ## Présentation
 
